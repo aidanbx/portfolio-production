@@ -8,4 +8,4 @@ app.get('/', async (request, response) => {
     response.send(await readFile('./home.html', 'utf8').catch(console.error()));
 });
 
-app.listen(process.env.PORT || 3000, () => console.log(`Website running at http://${process.env.IP || 'localhost'}:${process.env.PORT || '3000'}`));
+app.listen(process.env.PORT || 8080, () => console.log(`Website running at http://${process.env.IP || 'localhost'}:${process.env.PORT || '3000'}`));
