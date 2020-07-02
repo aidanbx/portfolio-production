@@ -2,41 +2,24 @@
 <html>
 
 <head>
-  <link href="style/index.css" type="text/css" rel="stylesheet">
-  <title>aabbq</title>
-  <script> 
-    window.addEventListener('scroll', (e) => {
-      var scrolled = window.pageYOffset;
-      var containerHeight = document.getElementById('container2').offsetHeight;
-
-      var boxs = document.getElementById('container2').querySelectorAll('#box2');
-
-      for (i = 0; i < boxs.length; i++) {
-        boxs[i].style.top = (containerHeight / 2 + 10 - (scrolled * (10 / boxs[i].offsetHeight))) + 'px';
-      }
-    });
-  </script>
+    <link href="style/home.css" type="text/css" rel="stylesheet">
+    <title>aabbq</title>
 </head>
 
-<body class='tiledBackground'>
-
-  <div id='container2' class='container'>
-    <div id='box2' class='box sm middle center'>c</div>
-    <div id='box2' class='box md middle center'>c</div>
-    <div id='box2' class='box lg middle center'>c</div>
-    <div id='box2' class='box xl middle center'>c</div>
-  </div>
-
-  <div id='container1' class='container'>
-    <div id='box1' class='box middle center'>c</div>
-  </div>
-
-  <b>Info:</b><br>
-  <p id='info'></p>
-
-  <div id='container3' class='container'>
-    <div class='box middle center'>c</div>
-  </div>
+<body id='tiledBackground'>
+    <div class='container'>
+        c
+        <div class='foreground'>
+            fg
+        </div>
+    </div>
+    <p>scene 2</p>
+    <div class='container'>
+        c2
+        <div class='foreground'>
+            fg2
+        </div>
+    </div>
 </body>
 
 </html>

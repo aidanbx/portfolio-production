@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+  <link href="style/home.css" type="text/css" rel="stylesheet">
+  <title>aabbq</title>
+
+  <script>
+    var bodyBg = document.getElementById('bodyBg');
+    console.log(bodyBg);
+    bodyBg.style.backgroundSize = window.innerWidth/50 + 'px';
+    console.log(bodyBg);
+  </script>
+  <script> 
+    window.addEventListener('scroll', (e) => {
+      var scrolled = window.pageYOffset;
+      var containerHeight = document.getElementById('container1').offsetHeight;
+
+      var boxs = document.getElementById('container1').querySelectorAll('#box2');
+
+      for (i = 0; i < boxs.length; i++) {
+        // boxs[i].style.top = (containerHeight / 2 + (scrolled * (boxs[i].offsetHeight/10))) + 'px';
+        boxs[i].style.top = containerHeight/2 + (scrolled/(i+1)) + 'px';
+      }
+    });
+  </script>
+</head>
+
+<body id='bodyBg' class='tiledBackground'>
+
+  <div id='container1' class='container'>
+    <div id='box2' class='bgLayer middle center'>
+      <img src='./images/sunset.jpg' class='fillImg'>
+    </div>
+    <div id='box2' class='box lg middle center'>c</div>
+    <div id='box2' class='box md middle center'>c</div>
+    <div id='box2' class='box sm   middle center'>c</div>
+  </div>
+
+  <div>
+    <img src='images/sig.jpg'>
+  </div>
+  
+</body>
+
+</html>
