@@ -1,0 +1,76 @@
+.tiledBackground {
+    font-family: 'Lato';
+    background-image: url('../images/tiles/blue-circles.png');
+    background-repeat: repeat;
+    background-size: 50px;
+    width: 100vw;
+    height: auto;
+    border: 2px solid;
+    color: pink;
+}
+
+.container {
+    width: 33vw;
+    height: 33vh;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75vh;
+    border: 1px solid black;
+}
+
+.box {
+    border: 1px solid red;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.sm {
+    width: 20px;
+    height: 20px;
+}
+
+.md {
+    width: 40px;
+    height: 40px;
+}
+
+.lg {
+    width: 80px;
+    height: 80px;
+}
+
+.xl {
+    width: 160px;
+    height: 160px;
+}
+
+.top {
+    top: 0
+}
+
+.middle {
+    top: 50%;
+    margin-top: -10px;
+    /*half of the .box height*/
+}
+
+.bottom {
+    bottom: 0
+}
+
+.left {
+    left: 0;
+}
+
+.center {
+    left: 50%;
+    margin-left: -10px;
+    /*half of the .box width*/
+}
+
+.right {
+    right: 0;
+}

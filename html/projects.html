@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+  <link href="./style/index.css" type="text/css" rel="stylesheet">
+  <title>aabbq</title>
+  <script>
+    window.addEventListener('scroll', (e) => {
+      var scrolled = window.pageYOffset;
+      const background = document.querySelector('img');
+      console.log(background);
+      background.style.top = - (scrolled * 0.2) + 'px';
+    });
+  </script>
+</head>
+
+<body class='tiledBackground'>
+  <div class='background'>
+    <div class='foreground'>foreground</div>
+  </div>
+
+  <!-- <img class='vertical centeredImg' src='./images/full-size/honey.jpg' alt='honeybee'>
+  <img class='horizontal centeredImg' src='./images/full-size/exoskel.jpg' alt='honeybee'> -->
+
+  <!-- <div class='container centeredImg'>
+    <img src='./images/full-size/honey.jpg' alt='honeybee'>
+      <button class='btn' onclick="location.href='./projects.html'">Go to Projects</a>
+    </img>
+  </div>
+  <div class='container centeredImg'>
+    <img src='./images/full-size/exoskel.jpg' alt='honeybee'>
+      <button class='btn'>Go to Projects</a>
+    </img>
+  </div> -->
+
+
+  <!-- <div>
+    <img class='horizontal centeredImg' src='./images/full-size/exoskel.jpg'>
+  </div>
+  <div class='grassBack'>
+    <p class='centeredText'>grassy background</p>
+  </div>
+</body> -->
+
+</html>
