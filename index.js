@@ -1,11 +1,16 @@
 const express = require('express');
-const { readFile } = require('fs').promises;
+const path = require('path');
 const app = express();
 
-app.use(express.static('.'));
+app.use(express.static(path.join(__dirname, 'build')));
 
-app.get('/', async (request, response) => {
-    response.send(await readFile('./home.html', 'utf8').catch(console.error()));
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-app.listen(process.env.PORT || 8080, () => console.log(`Website running at http://${process.env.IP || 'localhost'}:${process.env.PORT || '3000'}`));
+app.listen(process.env.PORT || 8080, () =>
+  console.log(
+    `Website running at http://${process.env.IP || 'localhost'}:${process.env
+      .PORT || '3000'}`
+  )
+);
