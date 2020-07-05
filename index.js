@@ -11,6 +11,6 @@ app.get('/', (req, res) => {
 app.listen(process.env.PORT || 8080, () =>
   console.log(
     `Website running at http://${process.env.IP || 'localhost'}:${process.env
-      .PORT || '3000'}`
+      .PORT || '8080'}`
   )
 );
