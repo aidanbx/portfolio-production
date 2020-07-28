@@ -1,27 +1,15 @@
 {
-  "name": "site",
+  "name": "prod-master",
   "version": "1.0.0",
-  "description": "testing grounds for web dev",
-  "main": "server.js",
-  "scripts": {
-    "test": "node .",
-    "start": "node ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/abarbieu/site.git"
-  },
-  "keywords": [
-    "website"
-  ],
-  "author": "Aidan Barbieux",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/abarbieu/site/issues"
-  },
-  "homepage": "https://github.com/abarbieu/site#readme",
+  "description": "",
+  "main": "index.js",
   "dependencies": {
     "express": "^4.17.1"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }
