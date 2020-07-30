@@ -3,7 +3,6 @@ const { Pool } = require('pg');
 
 const pool = new Pool();
 
-console.log(process.env.TODOLIST_TABLE);
 const todoListTable = process.env.TODOLIST_TABLE || 'todolist';
 
 // GET /api/todos gets all todos in db
