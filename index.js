@@ -3,7 +3,9 @@ const path = require('path');
 const app = require('./todoApi/todoApi');
 
 app.use(express.static(path.join(__dirname, 'build')));
-
+app.get('/uni/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'unibuild', 'index.html'));
+});
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
