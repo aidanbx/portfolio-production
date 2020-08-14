@@ -1,11 +1,15 @@
 require('dotenv').config();
 const express = require('express');
-// const path = require('path');
-
 const bodyParser = require('body-parser');
 const logger = require('./middleware/logger');
 const todoRoutes = require('./routes/todos');
+
 const app = express();
+const PORT = process.env.PORT || 8080;
+const IP = process.env.IP || localhost;
+
+app.set('PORT', PORT);
+app.set('IP', IP);
 
 app.use((req, res, next) => {
   res.append('Access-Control-Allow-Origin', [ '*' ]);
@@ -30,13 +34,17 @@ app.get('/api/', (req, res, next) => {
   res.send(
     JSON.stringify(
       {
-        info     : 'Todolist API',
-        commands : {
+        title            : 'abarbieux.com REST API',
+        todoListCommands : {
+          prefix      : '/api/',
           getTodos    : 'get /todos',
           getTodoById : 'get /todos/:id',
-          createTodo  : 'post /todos',
+          createTodo  : 'post /todos/?title=title&complete=checked',
           updateTodo  : 'put /todos/:id',
           deleteTodo  : 'delete /todos/:id',
+        },
+        mailCommands     : {
+          sendMail : 'post /mail/?pass=password',
         },
       },
       null,
