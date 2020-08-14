@@ -12,7 +12,7 @@ app.set('PORT', PORT);
 app.set('IP', IP);
 
 app.use((req, res, next) => {
-  res.append('Access-Control-Allow-Origin', [ '*' ]);
+  res.append('Access-Control-Allow-Origin', ['*']);
   res.append('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
   res.append('Access-Control-Allow-Headers', 'Content-Type');
   next();
@@ -20,7 +20,7 @@ app.use((req, res, next) => {
 
 app.use(
   bodyParser.urlencoded({
-    extended : true,
+    extended: true,
   })
 );
 
@@ -34,17 +34,17 @@ app.get('/api/', (req, res, next) => {
   res.send(
     JSON.stringify(
       {
-        title            : 'abarbieux.com REST API',
-        todoListCommands : {
-          prefix      : '/api/',
-          getTodos    : 'get /todos',
-          getTodoById : 'get /todos/:id',
-          createTodo  : 'post /todos/?title=title&complete=checked',
-          updateTodo  : 'put /todos/:id',
-          deleteTodo  : 'delete /todos/:id',
+        title: 'abarbieux.com REST API',
+        todoListCommands: {
+          prefix: '/api/',
+          getTodos: 'get /todos',
+          getTodoById: 'get /todos/:id',
+          createTodo: 'post /todos/?title=title&complete=checked',
+          updateTodo: 'put /todos/:id',
+          deleteTodo: 'delete /todos/:id',
         },
-        mailCommands     : {
-          sendMail : 'post /mail/?pass=password',
+        mailCommands: {
+          sendMail: 'post /mail/?pass=password',
         },
       },
       null,
