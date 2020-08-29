@@ -4,10 +4,26 @@ const fs = require('fs');
 const ipRegex = /[\d\.]+$/;
 const firstPathRegex = /^\/([a-z\.]*)\/?/;
 
-const getLog = (ip) => {
-  return logs[ip];
+const getIP = (req) => {
+  let tmpIP = '';
+  let ret = '';
+  try {
+    if (req.headers['x-real-ip']) {
+      tmpIP = req.headers['x-real-ip'];
+    } else if (req.protocol === 'http') {
+      tmpIP = req.socket.remoteAddress;
+    } else if (req.protocol === 'https') {
+      tmpIP = req.connection.socket.remoteAddress;
+    } else {
+      tmpIP = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+    }
+    ret = tmpIP.match(ipRegex)[0];
+  } catch (err) {
+    console.error(err);
+    return undefined;
+  }
+  return ret;
 };
-
 const makeLog = (req) => {
   let clientIP;
   let log = {};
@@ -23,21 +39,7 @@ const makeLog = (req) => {
   } catch (err) {
     log[err] = err;
   }
-  try {
-    if (req.headers['x-real-ip']) {
-      tmpIP = req.headers['x-real-ip'];
-    } else if (req.protocol === 'http') {
-      tmpIP = req.socket.remoteAddress;
-    } else if (req.protocol === 'https') {
-      tmpIP = req.connection.socket.remoteAddress;
-    } else {
-      tmpIP = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
-    }
-    clientIP = tmpIP.match(ipRegex)[0];
-  } catch (err) {
-    log[err] = err.message;
-    clientIP = undefined;
-  }
+  clientIP = getIP(req);
   if (clientIP) {
     log.ip = clientIP;
     try {
@@ -83,4 +85,4 @@ const logger = (req, res, next, logs) => {
   next();
 };
 
-module.exports = { getLog, makeLog, logger };
+module.exports = { getIP, makeLog, logger };
