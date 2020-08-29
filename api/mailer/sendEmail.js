@@ -4,7 +4,7 @@ const logger = require('../middleware/logger');
 const password = process.env.DEVPASS;
 const from = process.env.DEVEMAIL;
 const to = process.env.TOEMAIL;
-const logs = require('../logs.json');
+const logs = require('../../logs.json');
 
 var transporter = nodemailer.createTransport({
   host: 'mail.privateemail.com',
