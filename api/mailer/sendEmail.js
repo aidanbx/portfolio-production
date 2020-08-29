@@ -6,8 +6,7 @@ const xoauth2 = require('xoauth2');
 const clid = process.env.CLIENTID;
 const clsec = process.env.CLIENTSECRET;
 const refrtok = process.env.REFRESHTOKEN;
-const acctok = process.env.ACCESSTOKEN;
-const from = process.env.DEVEMAIL;
+const from = process.env.FROMEMAIL;
 const to = process.env.TOEMAIL;
 const logs = require('../../logs.json');
 
@@ -16,10 +15,9 @@ var transporter = nodemailer.createTransport({
   auth: {
     xoauth2: xoauth2.createXOAuth2Generator({
       user: from,
-      clientID: clid,
+      clientId: clid,
       clientSecret: clsec,
       refreshToken: refrtok,
-      accessToken: acctok
     })
   }
   // host: 'mail.privateemail.com',
