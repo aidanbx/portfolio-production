@@ -1,1 +1,1 @@
-ssh -t aidan@abarbieux.com "cd ~/web/prod-master/ ; rm -rf ./build ; git fetch --all ; git reset --hard origin/master ; exit ; bash"
+ssh -t aidan@barbieux.dev "cd ~/web/prod-master/ ; rm -rf ./build ; git fetch --all ; git reset --hard origin/master ; exit ; bash"
