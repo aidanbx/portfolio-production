@@ -1,19 +1,32 @@
 require('dotenv').config({ path: '../' });
 const nodemailer = require('nodemailer');
 const logger = require('../middleware/logger');
-const password = process.env.DEVPASS;
+const xoauth2 = require('xoauth2');
+// const password = process.env.DEVPASS;
+const clid = process.env.CLIENTID;
+const clsec = process.env.CLIENTSECRET;
+const refrtok = process.env.REFRESHTOKEN;
 const from = process.env.DEVEMAIL;
 const to = process.env.TOEMAIL;
 const logs = require('../../logs.json');
 
 var transporter = nodemailer.createTransport({
-  host: 'mail.privateemail.com',
-  srcure: true,
-  port: 465,
+  service: 'gmail',
   auth: {
-    user: from,
-    pass: password
+    xoauth2: xoauth2.createXOAuth2Generator({
+      user: from,
+      clientID: clid,
+      clientSecret: clsec,
+      refreshToken: refrtok
+    })
   }
+  // host: 'mail.privateemail.com',
+  // srcure: true,
+  // port: 465,
+  // auth: {
+  //   user: from,
+  //   pass: password
+  // }
   // dkim: {
   //   domainName: 'privateemail.com',
   //   keySelector: '2020',
