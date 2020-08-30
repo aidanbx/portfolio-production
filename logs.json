@@ -10000,8 +10000,29 @@
       {
         "time": "Sun Aug 23 2020 11:30:10 GMT-0700",
         "loc": "GET http://138.68.14.76/"
+      },
+      {
+        "time": "Sat Aug 29 2020 11:30:10 GMT-0700",
+        "loc": "GET http://138.68.14.76/"
       }
-    ]
+    ],
+    "geo": {
+      "range": [
+        866058240,
+        866123775
+      ],
+      "country": "FR",
+      "region": "IDF",
+      "eu": "1",
+      "timezone": "Europe/Paris",
+      "city": "Paris",
+      "ll": [
+        48.8607,
+        2.3281
+      ],
+      "metro": 0,
+      "area": 500
+    }
   },
   "52.255.203.221": {
     "/": [
@@ -10086,8 +10107,33 @@
       {
         "time": "Sun Aug 23 2020 11:32:05 GMT-0700",
         "loc": "HEAD http://barbieux.dev/"
+      },
+      {
+        "time": "Sat Aug 29 2020 05:08:27 GMT-0700",
+        "loc": "HEAD http://barbieux.dev/"
+      },
+      {
+        "time": "Sun Aug 30 2020 07:38:39 GMT-0700",
+        "loc": "HEAD http://abarbieux.com/"
       }
-    ]
+    ],
+    "geo": {
+      "range": [
+        2331439104,
+        2331443199
+      ],
+      "country": "DE",
+      "region": "BY",
+      "eu": "1",
+      "timezone": "Europe/Berlin",
+      "city": "Munich",
+      "ll": [
+        48.1497,
+        11.585
+      ],
+      "metro": 0,
+      "area": 200
+    }
   },
   "77.88.5.235": {
     "/robots.txt": [
@@ -10934,8 +10980,29 @@
       {
         "time": "Sun Aug 23 2020 08:29:02 GMT-0700",
         "loc": "GET http://0/"
+      },
+      {
+        "time": "Sat Aug 29 2020 22:03:31 GMT-0700",
+        "loc": "GET http://0/"
       }
-    ]
+    ],
+    "geo": {
+      "range": [
+        1398871040,
+        1398871295
+      ],
+      "country": "RO",
+      "region": "B",
+      "eu": "1",
+      "timezone": "Europe/Bucharest",
+      "city": "Bucharest",
+      "ll": [
+        44.418,
+        26.1691
+      ],
+      "metro": 0,
+      "area": 200
+    }
   },
   "46.229.168.132": {
     "/robots.txt": [
@@ -11076,8 +11143,29 @@
       {
         "time": "Sat Aug 22 2020 06:23:24 GMT-0700",
         "loc": "GET http://138.68.14.76/"
+      },
+      {
+        "time": "Sat Aug 29 2020 23:28:06 GMT-0700",
+        "loc": "GET http://138.68.14.76/"
       }
-    ]
+    ],
+    "geo": {
+      "range": [
+        2148433920,
+        2148435967
+      ],
+      "country": "US",
+      "region": "CA",
+      "eu": "0",
+      "timezone": "America/Los_Angeles",
+      "city": "Arcadia",
+      "ll": [
+        34.1397,
+        -118.0353
+      ],
+      "metro": 803,
+      "area": 500
+    }
   },
   "54.36.149.19": {
     "/robots.txt": [
@@ -11408,8 +11496,29 @@
       {
         "time": "Thu Aug 20 2020 00:03:21 GMT-0700",
         "loc": "GET http://138.68.14.76/"
+      },
+      {
+        "time": "Sat Aug 29 2020 17:28:02 GMT-0700",
+        "loc": "GET http://138.68.14.76/"
       }
-    ]
+    ],
+    "geo": {
+      "range": [
+        2148433920,
+        2148435967
+      ],
+      "country": "US",
+      "region": "CA",
+      "eu": "0",
+      "timezone": "America/Los_Angeles",
+      "city": "Arcadia",
+      "ll": [
+        34.1397,
+        -118.0353
+      ],
+      "metro": 803,
+      "area": 500
+    }
   },
   "192.241.236.53": {
     "/cgi-bin/authLogin.cgi": [
@@ -11459,6 +11568,10 @@
     "/robots.txt": [
       {
         "time": "Thu Aug 20 2020 12:49:59 GMT-0700",
+        "loc": "GET http://barbieux.dev/robots.txt"
+      },
+      {
+        "time": "Sat Aug 29 2020 10:02:45 GMT-0700",
         "loc": "GET http://barbieux.dev/robots.txt"
       }
     ],
@@ -11513,7 +11626,24 @@
         "time": "Thu Aug 20 2020 13:11:48 GMT-0700",
         "loc": "GET http://barbieux.dev/icons/home.svg"
       }
-    ]
+    ],
+    "geo": {
+      "range": [
+        1123633152,
+        1123634175
+      ],
+      "country": "US",
+      "region": "",
+      "eu": "0",
+      "timezone": "America/Chicago",
+      "city": "",
+      "ll": [
+        37.751,
+        -97.822
+      ],
+      "metro": 0,
+      "area": 1000
+    }
   },
   "66.249.75.230": {
     "/": [
@@ -11627,6 +11757,35 @@
         "time": "Thu Aug 20 2020 13:11:49 GMT-0700",
         "loc": "GET http://barbieux.dev/icons/explore.svg"
       }
+    ],
+    "geo": {
+      "range": [
+        1123633152,
+        1123634175
+      ],
+      "country": "US",
+      "region": "",
+      "eu": "0",
+      "timezone": "America/Chicago",
+      "city": "",
+      "ll": [
+        37.751,
+        -97.822
+      ],
+      "metro": 0,
+      "area": 1000
+    },
+    "/robots.txt": [
+      {
+        "time": "Sat Aug 29 2020 20:32:49 GMT-0700",
+        "loc": "GET http://barbieux.dev/robots.txt"
+      }
+    ],
+    "/static/css/2.838aa280.chunk.css": [
+      {
+        "time": "Sat Aug 29 2020 23:59:49 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/css/2.838aa280.chunk.css"
+      }
     ]
   },
   "66.249.75.234": {
@@ -11662,6 +11821,39 @@
       {
         "time": "Thu Aug 20 2020 13:11:50 GMT-0700",
         "loc": "GET http://barbieux.dev/icons/contact.svg"
+      }
+    ],
+    "geo": {
+      "range": [
+        1123633152,
+        1123634175
+      ],
+      "country": "US",
+      "region": "",
+      "eu": "0",
+      "timezone": "America/Chicago",
+      "city": "",
+      "ll": [
+        37.751,
+        -97.822
+      ],
+      "metro": 0,
+      "area": 1000
+    },
+    "/": [
+      {
+        "time": "Sat Aug 29 2020 10:02:45 GMT-0700",
+        "loc": "GET http://barbieux.dev/"
+      },
+      {
+        "time": "Sat Aug 29 2020 20:32:49 GMT-0700",
+        "loc": "GET http://barbieux.dev/"
+      }
+    ],
+    "/robots.txt": [
+      {
+        "time": "Sat Aug 29 2020 23:59:48 GMT-0700",
+        "loc": "GET http://barbieux.dev/robots.txt"
       }
     ]
   },
@@ -15324,8 +15516,29 @@
       {
         "time": "Fri Aug 21 2020 10:23:50 GMT-0700",
         "loc": "GET http://138.68.14.76/"
+      },
+      {
+        "time": "Sat Aug 29 2020 05:59:23 GMT-0700",
+        "loc": "GET http://138.68.14.76/"
       }
-    ]
+    ],
+    "geo": {
+      "range": [
+        1347571072,
+        1347571199
+      ],
+      "country": "NL",
+      "region": "",
+      "eu": "1",
+      "timezone": "Europe/Amsterdam",
+      "city": "",
+      "ll": [
+        52.3824,
+        4.8995
+      ],
+      "metro": 0,
+      "area": 100
+    }
   },
   "192.35.168.218": {
     "/": [
@@ -16560,16 +16773,58 @@
       {
         "time": "Fri Aug 21 2020 23:25:04 GMT-0700",
         "loc": "GET http://138.68.14.76/"
+      },
+      {
+        "time": "Sat Aug 29 2020 20:13:10 GMT-0700",
+        "loc": "GET http://138.68.14.76/"
       }
-    ]
+    ],
+    "geo": {
+      "range": [
+        3575675456,
+        3575675519
+      ],
+      "country": "FR",
+      "region": "",
+      "eu": "1",
+      "timezone": "Europe/Paris",
+      "city": "",
+      "ll": [
+        48.8582,
+        2.3387
+      ],
+      "metro": 0,
+      "area": 500
+    }
   },
   "128.14.209.226": {
     "/": [
       {
         "time": "Sat Aug 22 2020 00:24:52 GMT-0700",
         "loc": "GET http://138.68.14.76/"
+      },
+      {
+        "time": "Sun Aug 30 2020 13:27:59 GMT-0700",
+        "loc": "GET http://138.68.14.76/"
       }
-    ]
+    ],
+    "geo": {
+      "range": [
+        2148454400,
+        2148455423
+      ],
+      "country": "US",
+      "region": "CA",
+      "eu": "0",
+      "timezone": "America/Los_Angeles",
+      "city": "Los Angeles",
+      "ll": [
+        34.0729,
+        -118.2606
+      ],
+      "metro": 803,
+      "area": 1000
+    }
   },
   "66.249.79.102": {
     "/robots.txt": [
@@ -16628,8 +16883,29 @@
       {
         "time": "Sat Aug 22 2020 11:53:54 GMT-0700",
         "loc": "GET http://138.68.14.76/"
+      },
+      {
+        "time": "Sun Aug 30 2020 13:03:41 GMT-0700",
+        "loc": "GET http://barbieux.dev/"
       }
-    ]
+    ],
+    "geo": {
+      "range": [
+        55574528,
+        56098815
+      ],
+      "country": "US",
+      "region": "VA",
+      "eu": "0",
+      "timezone": "America/New_York",
+      "city": "Ashburn",
+      "ll": [
+        39.0481,
+        -77.4728
+      ],
+      "metro": 511,
+      "area": 1000
+    }
   },
   "46.229.168.163": {
     "/robots.txt": [
@@ -17771,6 +18047,863 @@
       {
         "time": "Sat Aug 29 2020 01:29:01 GMT-0700",
         "loc": "POST http://barbieux.dev/api/mail/"
+      },
+      {
+        "time": "Sat Aug 29 2020 01:36:34 GMT-0700",
+        "loc": "POST http://barbieux.dev/api/mail/"
+      }
+    ]
+  },
+  "68.107.40.82": {
+    "geo": {
+      "range": [
+        1147873280,
+        1147875327
+      ],
+      "country": "US",
+      "region": "CA",
+      "eu": "0",
+      "timezone": "America/Los_Angeles",
+      "city": "San Diego",
+      "ll": [
+        32.7203,
+        -117.1552
+      ],
+      "metro": 825,
+      "area": 5
+    },
+    "/": [
+      {
+        "time": "Sat Aug 29 2020 01:42:31 GMT-0700",
+        "loc": "GET http://barbieux.dev/"
+      },
+      {
+        "time": "Sat Aug 29 2020 21:57:26 GMT-0700",
+        "loc": "GET http://barbieux.dev/"
+      },
+      {
+        "time": "Sat Aug 29 2020 22:02:08 GMT-0700",
+        "loc": "GET http://barbieux.dev/"
+      },
+      {
+        "time": "Sat Aug 29 2020 22:02:10 GMT-0700",
+        "loc": "GET http://barbieux.dev/"
+      },
+      {
+        "time": "Sat Aug 29 2020 22:02:10 GMT-0700",
+        "loc": "GET http://barbieux.dev/"
+      },
+      {
+        "time": "Sat Aug 29 2020 22:02:13 GMT-0700",
+        "loc": "GET http://barbieux.dev/"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:19:01 GMT-0700",
+        "loc": "GET http://barbieux.dev/"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:37:37 GMT-0700",
+        "loc": "GET http://barbieux.dev/"
+      }
+    ],
+    "/static/css/2.838aa280.chunk.css": [
+      {
+        "time": "Sat Aug 29 2020 01:42:32 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/css/2.838aa280.chunk.css"
+      },
+      {
+        "time": "Sat Aug 29 2020 21:57:26 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/css/2.838aa280.chunk.css"
+      },
+      {
+        "time": "Sat Aug 29 2020 22:02:08 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/css/2.838aa280.chunk.css"
+      },
+      {
+        "time": "Sat Aug 29 2020 22:02:10 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/css/2.838aa280.chunk.css"
+      },
+      {
+        "time": "Sat Aug 29 2020 22:02:10 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/css/2.838aa280.chunk.css"
+      },
+      {
+        "time": "Sat Aug 29 2020 22:02:15 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/css/2.838aa280.chunk.css"
+      },
+      {
+        "time": "Sat Aug 29 2020 22:16:00 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/css/2.838aa280.chunk.css"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:19:01 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/css/2.838aa280.chunk.css"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:19:06 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/css/2.838aa280.chunk.css"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:37:38 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/css/2.838aa280.chunk.css"
+      }
+    ],
+    "/static/css/main.4283aec8.chunk.css": [
+      {
+        "time": "Sat Aug 29 2020 01:42:32 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/css/main.4283aec8.chunk.css"
+      },
+      {
+        "time": "Sat Aug 29 2020 21:57:26 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/css/main.4283aec8.chunk.css"
+      },
+      {
+        "time": "Sat Aug 29 2020 22:02:08 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/css/main.4283aec8.chunk.css"
+      },
+      {
+        "time": "Sat Aug 29 2020 22:02:10 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/css/main.4283aec8.chunk.css"
+      },
+      {
+        "time": "Sat Aug 29 2020 22:02:10 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/css/main.4283aec8.chunk.css"
+      },
+      {
+        "time": "Sat Aug 29 2020 22:02:15 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/css/main.4283aec8.chunk.css"
+      },
+      {
+        "time": "Sat Aug 29 2020 22:16:00 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/css/main.4283aec8.chunk.css"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:19:01 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/css/main.4283aec8.chunk.css"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:19:06 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/css/main.4283aec8.chunk.css"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:37:38 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/css/main.4283aec8.chunk.css"
+      }
+    ],
+    "/static/js/2.103e0c4d.chunk.js": [
+      {
+        "time": "Sat Aug 29 2020 01:42:32 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/js/2.103e0c4d.chunk.js"
+      },
+      {
+        "time": "Sat Aug 29 2020 21:57:26 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/js/2.103e0c4d.chunk.js"
+      },
+      {
+        "time": "Sat Aug 29 2020 22:02:08 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/js/2.103e0c4d.chunk.js"
+      },
+      {
+        "time": "Sat Aug 29 2020 22:02:10 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/js/2.103e0c4d.chunk.js"
+      },
+      {
+        "time": "Sat Aug 29 2020 22:02:10 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/js/2.103e0c4d.chunk.js"
+      },
+      {
+        "time": "Sat Aug 29 2020 22:02:15 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/js/2.103e0c4d.chunk.js"
+      },
+      {
+        "time": "Sat Aug 29 2020 22:16:00 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/js/2.103e0c4d.chunk.js"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:19:01 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/js/2.103e0c4d.chunk.js"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:19:06 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/js/2.103e0c4d.chunk.js"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:37:38 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/js/2.103e0c4d.chunk.js"
+      }
+    ],
+    "/static/js/main.d70e4f0f.chunk.js": [
+      {
+        "time": "Sat Aug 29 2020 01:42:32 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/js/main.d70e4f0f.chunk.js"
+      },
+      {
+        "time": "Sat Aug 29 2020 21:57:26 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/js/main.d70e4f0f.chunk.js"
+      },
+      {
+        "time": "Sat Aug 29 2020 22:02:09 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/js/main.d70e4f0f.chunk.js"
+      },
+      {
+        "time": "Sat Aug 29 2020 22:02:10 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/js/main.d70e4f0f.chunk.js"
+      },
+      {
+        "time": "Sat Aug 29 2020 22:02:10 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/js/main.d70e4f0f.chunk.js"
+      },
+      {
+        "time": "Sat Aug 29 2020 22:02:15 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/js/main.d70e4f0f.chunk.js"
+      },
+      {
+        "time": "Sat Aug 29 2020 22:16:00 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/js/main.d70e4f0f.chunk.js"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:19:01 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/js/main.d70e4f0f.chunk.js"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:19:06 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/js/main.d70e4f0f.chunk.js"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:37:38 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/js/main.d70e4f0f.chunk.js"
+      }
+    ],
+    "/static/media/bg-pblue-str.3f36e803.png": [
+      {
+        "time": "Sat Aug 29 2020 01:42:32 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/media/bg-pblue-str.3f36e803.png"
+      },
+      {
+        "time": "Sat Aug 29 2020 21:57:27 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/media/bg-pblue-str.3f36e803.png"
+      },
+      {
+        "time": "Sat Aug 29 2020 22:02:09 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/media/bg-pblue-str.3f36e803.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:19:02 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/media/bg-pblue-str.3f36e803.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:37:39 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/media/bg-pblue-str.3f36e803.png"
+      }
+    ],
+    "/manifest.json": [
+      {
+        "time": "Sat Aug 29 2020 01:42:34 GMT-0700",
+        "loc": "GET http://barbieux.dev/manifest.json"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:19:03 GMT-0700",
+        "loc": "GET http://barbieux.dev/manifest.json"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:19:06 GMT-0700",
+        "loc": "GET http://barbieux.dev/manifest.json"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:37:40 GMT-0700",
+        "loc": "GET http://barbieux.dev/manifest.json"
+      }
+    ],
+    "/logo512.png": [
+      {
+        "time": "Sat Aug 29 2020 01:42:34 GMT-0700",
+        "loc": "GET http://barbieux.dev/logo512.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:19:03 GMT-0700",
+        "loc": "GET http://barbieux.dev/logo512.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:19:07 GMT-0700",
+        "loc": "GET http://barbieux.dev/logo512.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:37:40 GMT-0700",
+        "loc": "GET http://barbieux.dev/logo512.png"
+      }
+    ],
+    "/api/mail": [
+      {
+        "time": "Sat Aug 29 2020 01:42:46 GMT-0700",
+        "loc": "POST http://barbieux.dev/api/mail"
+      }
+    ],
+    "/explore": [
+      {
+        "time": "Sat Aug 29 2020 22:15:59 GMT-0700",
+        "loc": "GET http://barbieux.dev/explore"
+      }
+    ],
+    "/favicon.ico": [
+      {
+        "time": "Sat Aug 29 2020 22:16:00 GMT-0700",
+        "loc": "GET http://barbieux.dev/favicon.ico"
+      }
+    ],
+    "/logo128.png": [
+      {
+        "time": "Sat Aug 29 2020 22:16:00 GMT-0700",
+        "loc": "GET http://barbieux.dev/logo128.png"
+      }
+    ],
+    "/bg-pblue-str.png": [
+      {
+        "time": "Sun Aug 30 2020 12:21:10 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:27:42 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:28:54 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:31:48 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:34:05 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:35:23 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:35:44 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:38:41 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:39:18 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:41:55 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:42:24 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:43:21 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:43:58 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:44:16 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 12:46:14 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 13:10:47 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 13:11:32 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 13:11:43 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 13:12:15 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 13:12:27 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 13:12:50 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 13:13:13 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 13:13:34 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 13:14:29 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 13:15:02 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 13:15:35 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 13:16:14 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 13:16:21 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 13:17:02 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 13:18:18 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 13:18:46 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 13:19:22 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 13:20:12 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 13:20:28 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 13:22:00 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 13:22:27 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      },
+      {
+        "time": "Sun Aug 30 2020 13:22:45 GMT-0700",
+        "loc": "GET http://barbieux.dev/bg-pblue-str.png"
+      }
+    ],
+    "/static/css/2.838aa280.chunk.css.map": [
+      {
+        "time": "Sun Aug 30 2020 12:37:38 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/css/2.838aa280.chunk.css.map"
+      }
+    ],
+    "/static/css/main.4283aec8.chunk.css.map": [
+      {
+        "time": "Sun Aug 30 2020 12:37:38 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/css/main.4283aec8.chunk.css.map"
+      }
+    ],
+    "/static/js/2.103e0c4d.chunk.js.map": [
+      {
+        "time": "Sun Aug 30 2020 12:37:39 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/js/2.103e0c4d.chunk.js.map"
+      }
+    ],
+    "/static/js/main.d70e4f0f.chunk.js.map": [
+      {
+        "time": "Sun Aug 30 2020 12:37:39 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/js/main.d70e4f0f.chunk.js.map"
+      }
+    ]
+  },
+  "66.249.70.75": {
+    "geo": {
+      "range": [
+        1123632640,
+        1123633151
+      ],
+      "country": "US",
+      "region": "",
+      "eu": "0",
+      "timezone": "America/Chicago",
+      "city": "",
+      "ll": [
+        37.751,
+        -97.822
+      ],
+      "metro": 0,
+      "area": 1000
+    },
+    "/robots.txt": [
+      {
+        "time": "Sat Aug 29 2020 02:13:40 GMT-0700",
+        "loc": "GET http://barbieux.dev/robots.txt"
+      }
+    ]
+  },
+  "66.249.70.71": {
+    "geo": {
+      "range": [
+        1123632640,
+        1123633151
+      ],
+      "country": "US",
+      "region": "",
+      "eu": "0",
+      "timezone": "America/Chicago",
+      "city": "",
+      "ll": [
+        37.751,
+        -97.822
+      ],
+      "metro": 0,
+      "area": 1000
+    },
+    "/": [
+      {
+        "time": "Sat Aug 29 2020 02:13:40 GMT-0700",
+        "loc": "GET http://barbieux.dev/"
+      }
+    ]
+  },
+  "66.249.70.73": {
+    "geo": {
+      "range": [
+        1123632640,
+        1123633151
+      ],
+      "country": "US",
+      "region": "",
+      "eu": "0",
+      "timezone": "America/Chicago",
+      "city": "",
+      "ll": [
+        37.751,
+        -97.822
+      ],
+      "metro": 0,
+      "area": 1000
+    },
+    "/static/css/main.4283aec8.chunk.css": [
+      {
+        "time": "Sat Aug 29 2020 02:24:05 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/css/main.4283aec8.chunk.css"
+      }
+    ],
+    "/static/js/main.d70e4f0f.chunk.js": [
+      {
+        "time": "Sat Aug 29 2020 02:24:06 GMT-0700",
+        "loc": "GET http://barbieux.dev/static/js/main.d70e4f0f.chunk.js"
+      }
+    ]
+  },
+  "66.175.222.170": {
+    "geo": {
+      "range": [
+        1118820352,
+        1118822399
+      ],
+      "country": "US",
+      "region": "CA",
+      "eu": "0",
+      "timezone": "America/Los_Angeles",
+      "city": "Fremont",
+      "ll": [
+        37.5625,
+        -122.0004
+      ],
+      "metro": 807,
+      "area": 1000
+    },
+    "/api/v1": [
+      {
+        "time": "Sat Aug 29 2020 03:13:31 GMT-0700",
+        "loc": "GET http://138.68.14.76/api/v1"
+      }
+    ]
+  },
+  "192.241.232.225": {
+    "geo": {
+      "range": [
+        3237076992,
+        3237081087
+      ],
+      "country": "US",
+      "region": "CA",
+      "eu": "0",
+      "timezone": "America/Los_Angeles",
+      "city": "San Francisco",
+      "ll": [
+        37.7353,
+        -122.3732
+      ],
+      "metro": 807,
+      "area": 1000
+    },
+    "/": [
+      {
+        "time": "Sat Aug 29 2020 05:05:43 GMT-0700",
+        "loc": "GET http://138.68.14.76/"
+      }
+    ]
+  },
+  "62.210.6.93": {
+    "geo": {
+      "range": [
+        1053949952,
+        1053951999
+      ],
+      "country": "FR",
+      "region": "",
+      "eu": "1",
+      "timezone": "Europe/Paris",
+      "city": "",
+      "ll": [
+        48.8582,
+        2.3387
+      ],
+      "metro": 0,
+      "area": 500
+    },
+    "/": [
+      {
+        "time": "Sat Aug 29 2020 11:31:37 GMT-0700",
+        "loc": "GET http://138.68.14.76/"
+      }
+    ]
+  },
+  "80.82.77.139": {
+    "geo": {
+      "range": [
+        1347571072,
+        1347571199
+      ],
+      "country": "NL",
+      "region": "",
+      "eu": "1",
+      "timezone": "Europe/Amsterdam",
+      "city": "",
+      "ll": [
+        52.3824,
+        4.8995
+      ],
+      "metro": 0,
+      "area": 100
+    },
+    "/": [
+      {
+        "time": "Sat Aug 29 2020 18:12:15 GMT-0700",
+        "loc": "GET http://138.68.14.76/"
+      }
+    ],
+    "/favicon.ico": [
+      {
+        "time": "Sat Aug 29 2020 18:12:38 GMT-0700",
+        "loc": "GET http://138.68.14.76/favicon.ico"
+      }
+    ]
+  },
+  "195.37.190.77": {
+    "geo": {
+      "range": [
+        3274030592,
+        3274030719
+      ],
+      "country": "DE",
+      "region": "",
+      "eu": "1",
+      "timezone": "Europe/Berlin",
+      "city": "",
+      "ll": [
+        51.2993,
+        9.491
+      ],
+      "metro": 0,
+      "area": 200
+    },
+    "/dns-query": [
+      {
+        "time": "Sat Aug 29 2020 19:05:32 GMT-0700",
+        "loc": "GET http://138.68.14.76/dns-query"
+      },
+      {
+        "time": "Sat Aug 29 2020 19:05:33 GMT-0700",
+        "loc": "POST http://138.68.14.76/dns-query"
+      }
+    ]
+  },
+  "164.52.24.162": {
+    "geo": {
+      "range": [
+        2754875392,
+        2754879487
+      ],
+      "country": "HK",
+      "region": "",
+      "eu": "0",
+      "timezone": "Asia/Hong_Kong",
+      "city": "",
+      "ll": [
+        22.25,
+        114.1667
+      ],
+      "metro": 0,
+      "area": 50
+    },
+    "/": [
+      {
+        "time": "Sat Aug 29 2020 19:31:04 GMT-0700",
+        "loc": "GET http://138.68.14.76/"
+      }
+    ]
+  },
+  "192.241.235.156": {
+    "geo": {
+      "range": [
+        3237076992,
+        3237081087
+      ],
+      "country": "US",
+      "region": "CA",
+      "eu": "0",
+      "timezone": "America/Los_Angeles",
+      "city": "San Francisco",
+      "ll": [
+        37.7353,
+        -122.3732
+      ],
+      "metro": 807,
+      "area": 1000
+    },
+    "/owa/auth/logon.aspx": [
+      {
+        "time": "Sat Aug 29 2020 19:54:06 GMT-0700",
+        "loc": "GET http://138.68.14.76/owa/auth/logon.aspx"
+      }
+    ]
+  },
+  "192.241.231.22": {
+    "geo": {
+      "range": [
+        3237076992,
+        3237081087
+      ],
+      "country": "US",
+      "region": "CA",
+      "eu": "0",
+      "timezone": "America/Los_Angeles",
+      "city": "San Francisco",
+      "ll": [
+        37.7353,
+        -122.3732
+      ],
+      "metro": 807,
+      "area": 1000
+    },
+    "/": [
+      {
+        "time": "Sun Aug 30 2020 05:50:15 GMT-0700",
+        "loc": "GET http://138.68.14.76/"
+      }
+    ]
+  },
+  "183.56.165.213": {
+    "geo": {
+      "range": [
+        3073941504,
+        3073949695
+      ],
+      "country": "CN",
+      "region": "GD",
+      "eu": "0",
+      "timezone": "Asia/Shanghai",
+      "city": "",
+      "ll": [
+        23.1167,
+        113.25
+      ],
+      "metro": 0,
+      "area": 50
+    },
+    "/cgi-bin/login.cgi": [
+      {
+        "time": "Sun Aug 30 2020 07:39:01 GMT-0700",
+        "loc": "GET http://138.68.14.76/cgi-bin/login.cgi"
+      },
+      {
+        "time": "Sun Aug 30 2020 07:40:12 GMT-0700",
+        "loc": "GET http://138.68.14.76/cgi-bin/login.cgi"
+      }
+    ],
+    "//favicon.ico": [
+      {
+        "time": "Sun Aug 30 2020 07:40:20 GMT-0700",
+        "loc": "GET http://138.68.14.76//favicon.ico"
+      }
+    ]
+  },
+  "209.17.96.82": {
+    "geo": {
+      "range": [
+        3507576832,
+        3507580927
+      ],
+      "country": "US",
+      "region": "",
+      "eu": "0",
+      "timezone": "America/Chicago",
+      "city": "",
+      "ll": [
+        37.751,
+        -97.822
+      ],
+      "metro": 0,
+      "area": 1000
+    },
+    "/": [
+      {
+        "time": "Sun Aug 30 2020 08:00:04 GMT-0700",
+        "loc": "GET http://abarbieux.com/"
+      }
+    ]
+  },
+  "83.97.20.150": {
+    "geo": {
+      "range": [
+        1398871040,
+        1398871295
+      ],
+      "country": "RO",
+      "region": "B",
+      "eu": "1",
+      "timezone": "Europe/Bucharest",
+      "city": "Bucharest",
+      "ll": [
+        44.418,
+        26.1691
+      ],
+      "metro": 0,
+      "area": 200
+    },
+    "/": [
+      {
+        "time": "Sun Aug 30 2020 12:25:42 GMT-0700",
+        "loc": "GET http://138.68.14.76/"
       }
     ]
   }
