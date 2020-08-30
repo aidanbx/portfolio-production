@@ -79,7 +79,7 @@ sendEmail = async (req, res) => {
                   <tr>
                     <td align="center" style="vertical-align:top;color:rgb(16,55,66);padding:22px" valign="top">
                       <div>
-                        <img src="https://barbieux.dev/icons/sherbert.svg" alt="Sherbert" width="66px" height="66px"
+                        <img src="https://barbieux.dev/logo512.png" alt="Sherbert icon" width="66px" height="66px"
                           style="max-width:100%;margin-bottom:22px">
                       </div>
                       <p
@@ -127,10 +127,7 @@ sendEmail = async (req, res) => {
                   </tr>
                   <tr align="center" style="padding:0px 0px 22px">
                     <td style="padding:11px;">
-                      <span style="color:rgb(145,143,141);font-size:12px">${JSON.stringify(
-                        log,
-                        null,
-                        2
+                      <span style="color:rgb(145,143,141);font-size:12px">${`${log.geo.country} ${log.geo.region} ${log.geo.city} --- ${log.time}`
                       )}</span>
                     </td>
                   </tr>
@@ -151,7 +148,7 @@ sendEmail = async (req, res) => {
         console.error(err);
       } else {
         res.status(200).json({
-          status: 'Sent Email!, updated msg:',
+          status: 'Sent Email!, updated msg',
           from: `${log.country} ${log.region} ${log.city}`,
           time: `${log.time}`,
           subject,
