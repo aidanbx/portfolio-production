@@ -151,7 +151,7 @@ sendEmail = async (req, res) => {
         console.error(err);
       } else {
         res.status(200).json({
-          status: 'Sent Email!',
+          status: 'Sent Email!, updated msg:',
           from: `${log.country} ${log.region} ${log.city}`,
           time: `${log.time}`,
           subject,
