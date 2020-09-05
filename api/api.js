@@ -22,16 +22,12 @@ app.use((req, res, next) => {
 
 //! redirect
 app.use('/*', (req, res, next) => {
-  console.log(req.hostname, req.hostname === 'abarbieux.com');
-  if (req.hostname === 'localhost') {
-    res.redirect(301, 'https://barbieux.dev' + req.path);
+  const log = logger.makeLog(req);
+  if (log.domain === 'abarbieux.com') {
+    res.redirect(301, 'https://barbieux.dev' + log.url);
   }
   next();
 });
-// app.use('/api/', (req, res, next) => {
-//   res.header('Content-Type', 'application/json');
-//   next();
-// });
 
 app.use(
   bodyParser.urlencoded({
