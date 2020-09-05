@@ -19,6 +19,15 @@ app.use((req, res, next) => {
 
   next();
 });
+
+//! redirect
+app.use('/*', (req, res, next) => {
+  console.log(req.hostname, req.hostname === 'abarbieux.com');
+  if (req.hostname === 'localhost') {
+    res.redirect(301, 'https://barbieux.dev' + req.path);
+  }
+  next();
+});
 // app.use('/api/', (req, res, next) => {
 //   res.header('Content-Type', 'application/json');
 //   next();
