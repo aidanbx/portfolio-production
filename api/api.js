@@ -25,8 +25,9 @@ app.use('/*', (req, res, next) => {
   const log = logger.makeLog(req);
   if (log.domain === 'abarbieux.com') {
     res.redirect(301, 'https://barbieux.dev' + log.url);
+  } else {
+    next();
   }
-  next();
 });
 
 app.use(
