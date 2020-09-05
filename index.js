@@ -3,14 +3,6 @@ require('dotenv').config({ path: path.resolve(process.cwd(), 'api', '.env') });
 const express = require('express');
 const app = require('./api/api');
 
-//! redirect
-app.use('/*', (req, res, next) => {
-  if (req.hostname === 'abarbieux.com') {
-    res.redirect(301, 'https://barbieux.dev' + req.path);
-  }
-  next();
-});
-
 //! uni paths
 app.use('/uni/', express.static(path.join(__dirname, 'cp-uni')));
 app.get('/uni/*', function (req, res) {
