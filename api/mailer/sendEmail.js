@@ -9,15 +9,15 @@ const to = process.env.TOEMAIL;
 const logs = require('../../logs.json');
 
 var transporter = nodemailer.createTransport({
-  host   : 'smtp.gmail.com',
-  port   : 465,
-  secure : true,
-  auth   : {
-    type         : 'OAuth2',
-    user         : from,
-    clientId     : clid,
-    clientSecret : clsec,
-    refreshToken : refrtok,
+  host: 'smtp.gmail.com',
+  port: 465,
+  secure: true,
+  auth: {
+    type: 'OAuth2',
+    user: from,
+    clientId: clid,
+    clientSecret: clsec,
+    refreshToken: refrtok,
   },
 });
 
@@ -32,10 +32,10 @@ sendEmail = async (req, res) => {
 
   transporter.sendMail(
     {
-      from        : `"${name}" <mailer@barbieux.dev>`,
-      to          : `${to}`,
-      subject     : `${subject}`,
-      html        : `
+      from: `"${name}" <mailer@barbieux.dev>`,
+      to: `${to}`,
+      subject: `${subject}`,
+      html: `
 <!DOCTYPE html>
 <html lang="en">
 
@@ -121,8 +121,8 @@ sendEmail = async (req, res) => {
                   <tr align="center" style="padding:0px 0px 22px">
                     <td style="padding:11px;">
                       <span style="color:rgb(145,143,141);font-size:12px">${log
-                        .geo.country} ${log.geo.region} ${log.geo
-        .city} --- ${log.time} --- ${logger.getIP(req)}</span>
+          .geo.country} ${log.geo.region} ${log.geo
+            .city} --- ${log.time} --- ${logger.getIP(req)}</span>
                     </td>
                   </tr>
                 </tbody>
@@ -136,33 +136,7 @@ sendEmail = async (req, res) => {
 
 </html>
     `,
-
-      // An array of attachments
-      attachments : [
-        // String attachment
-        {
-          filename    : 'notes.txt',
-          content     : 'Some notes about this e-mail',
-          contentType : 'text/plain', // optional, would be detected from the filename
-        },
-
-        // Binary Buffer attachment
-        {
-          filename : 'image.png',
-          content  : Buffer.from(
-            'iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABlBMVEUAAAD/' +
-              '//+l2Z/dAAAAM0lEQVR4nGP4/5/h/1+G/58ZDrAz3D/McH8yw83NDDeNGe4U' +
-              'g9C9zwz3gVLMDA/A6P9/AFGGFyjOXZtQAAAAAElFTkSuQmCC',
-            'base64'
-          ),
-
-          cid      : 'note@example.com', // should be as unique as possible
-        },
-        {
-          filename : attachments[0].filename,
-          raw      : attachments[0].raw,
-        },
-      ],
+      attachments: attachments.map((attch => ({ filename: attch.filename, content: new Buffer.from(attch.raw.split("base62,")[1], "base64") })))
     },
     (err, info) => {
       if (err) {
@@ -171,14 +145,14 @@ sendEmail = async (req, res) => {
       } else {
         console.log('SENT MAIL!');
         res.status(200).json({
-          status      : 'Sent Email!, updated msg',
-          from        : `${log.country} ${log.region} ${log.city}`,
-          time        : `${log.time}`,
+          status: 'Sent Email!, updated msg',
+          from: `${log.country} ${log.region} ${log.city}`,
+          time: `${log.time}`,
           subject,
           name,
           content,
           replyto,
-          emailid     : info,
+          emailid: info,
           attachments,
         });
       }
