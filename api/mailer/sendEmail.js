@@ -35,7 +35,6 @@ sendEmail = async (req, res) => {
       from        : `"${name}" <mailer@barbieux.dev>`,
       to          : `${to}`,
       subject     : `${subject}`,
-      attachments,
       html        : `
 <!DOCTYPE html>
 <html lang="en">
@@ -137,6 +136,29 @@ sendEmail = async (req, res) => {
 
 </html>
     `,
+
+      // An array of attachments
+      attachments : [
+        // String attachment
+        {
+          filename    : 'notes.txt',
+          content     : 'Some notes about this e-mail',
+          contentType : 'text/plain', // optional, would be detected from the filename
+        },
+
+        // Binary Buffer attachment
+        {
+          filename : 'image.png',
+          content  : Buffer.from(
+            'iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABlBMVEUAAAD/' +
+              '//+l2Z/dAAAAM0lEQVR4nGP4/5/h/1+G/58ZDrAz3D/McH8yw83NDDeNGe4U' +
+              'g9C9zwz3gVLMDA/A6P9/AFGGFyjOXZtQAAAAAElFTkSuQmCC',
+            'base64'
+          ),
+
+          cid      : 'note@example.com', // should be as unique as possible
+        },
+      ],
     },
     (err, info) => {
       if (err) {
