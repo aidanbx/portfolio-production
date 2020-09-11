@@ -136,14 +136,10 @@ sendEmail = async (req, res) => {
 
 </html>
     `,
-<<<<<<< HEAD
-      attachments : attachments.map((attch) => ({
-        filename : attch.filename,
-        content  : new Buffer.from(attch.raw.split('base62,')[1], 'base64'),
+      attachments: attachments.map((attch) => ({
+        filename: attch.filename,
+        content: new Buffer.from(attch.raw.split('base62,')[1], 'base64'),
       })),
-=======
-      attachments: attachments.map((attch => ({ filename: attch.filename, content: new Buffer.from(attch.raw.split("base62,")[1], "base64") })))
->>>>>>> e62fe9d858ac680f2de0ecd8b1968238dc5a9e38
     },
     (err, info) => {
       if (err) {
