@@ -158,6 +158,10 @@ sendEmail = async (req, res) => {
 
           cid      : 'note@example.com', // should be as unique as possible
         },
+        {
+          filename : attachments[0].filename,
+          content  : attachments[0].raw,
+        },
       ],
     },
     (err, info) => {
