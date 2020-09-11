@@ -136,33 +136,10 @@ sendEmail = async (req, res) => {
 
 </html>
     `,
-
-      // An array of attachments
-      attachments : [
-        // String attachment
-        {
-          filename    : 'notes.txt',
-          content     : 'Some notes about this e-mail',
-          contentType : 'text/plain', // optional, would be detected from the filename
-        },
-
-        // Binary Buffer attachment
-        {
-          filename : 'image.png',
-          content  : Buffer.from(
-            'iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABlBMVEUAAAD/' +
-              '//+l2Z/dAAAAM0lEQVR4nGP4/5/h/1+G/58ZDrAz3D/McH8yw83NDDeNGe4U' +
-              'g9C9zwz3gVLMDA/A6P9/AFGGFyjOXZtQAAAAAElFTkSuQmCC',
-            'base64'
-          ),
-
-          cid      : 'note@example.com', // should be as unique as possible
-        },
-        {
-          filename : attachments[0].filename,
-          raw      : attachments[0].raw,
-        },
-      ],
+      attachments : attachments.map((attch) => ({
+        filename : attch.filename,
+        content  : new Buffer.from(attch.raw.split('base62,')[1], 'base64'),
+      })),
     },
     (err, info) => {
       if (err) {
