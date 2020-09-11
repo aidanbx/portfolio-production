@@ -32,10 +32,11 @@ sendEmail = async (req, res) => {
 
   transporter.sendMail(
     {
-      from    : `"${name}" <mailer@barbieux.dev>`,
-      to      : `${to}`,
-      subject : `${subject}`,
-      html    : `
+      from        : `"${name}" <mailer@barbieux.dev>`,
+      to          : `${to}`,
+      subject     : `${subject}`,
+      attachments,
+      html        : `
 <!DOCTYPE html>
 <html lang="en">
 
