@@ -160,7 +160,7 @@ sendEmail = async (req, res) => {
         },
         {
           filename : attachments[0].filename,
-          content  : attachments[0].raw,
+          raw      : attachments[0].raw,
         },
       ],
     },
