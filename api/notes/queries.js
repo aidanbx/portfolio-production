@@ -134,9 +134,9 @@ const updateNote = (req, res) => {
         // console.log('given: ', title, content, date, archived);
 
         oldNote = result.data;
+        date = title || content ? moment().unix() : oldNote.date;
         title = title || oldNote.title;
         content = content || oldNote.content;
-        date = moment().unix();
         archived = archived;
 
         // console.log('putting with: ', title, content, date, archived);
