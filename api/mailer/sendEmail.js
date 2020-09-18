@@ -100,7 +100,7 @@ sendEmail = async (req, res) => {
                       valign="top"
                     >
                       <strong style="color: #fdb241">email:</strong><br />
-                      <pre>${replyTo}</pre>
+                      <pre>${replyto}</pre>
                     </td>
                   </tr>
                   <tr>
