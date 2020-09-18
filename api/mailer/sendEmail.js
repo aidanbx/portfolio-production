@@ -36,107 +36,112 @@ sendEmail = async (req, res) => {
       subject: `${subject}`,
       html: `
       <!DOCTYPE html>
-      <html lang="en">
-        <body style="min-height: 100vh; margin: 0px; padding: 0px">
-          <div
+<html lang="en">
+  <body style="min-height: 100vh; margin: 0px; padding: 0px">
+    <div
+      style="
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+          Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+        min-height: 100vh;
+        background: url('https://barbieux.dev/bg-pblue-str.png');
+        background-size: 64px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+      "
+    >
+      <table
+        width="100%"
+        style="
+          border-radius: 10px;
+          position: absolute;
+          left: 50%;
+          top: 10%;
+          transform: translate(-50%, 0%);
+        "
+      >
+        <td valign="top" align="center">
+          <table
+            cellpadding="7"
             style="
-              font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-                Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
-              min-height: 100vh;
-              background: url('https://barbieux.dev/bg-pblue-str.png');
+              width: 70%;
+              max-width: 616px;
+              border-radius: 10px;
               width: 100%;
-              background-size: 64px;
-              margin: 0px;
-              padding: 0px;
             "
           >
-            <div
+            <tbody
+              valign="top"
+              align="center"
               style="
-                width: 70%;
-                max-width: 616px;
-                position: absolute;
-                left: 50%;
-                top: 10%;
-                transform: translate(-50%, 0%);
+                margin: 1px;
+                display: block;
+                border-radius: 10px 10px 0px 0px;
+                background-color: #0000005e;
               "
             >
-              <table cellpadding="7" style="border-radius: 10px; width: 100%">
-                <tbody
-                  style="border-radius: 10px 10px 0px 0px; background-color: #2d344d"
-                >
-                  <tr>
-                    <td valign="top" align="center">
-                      <img
-                        src="https://barbieux.dev/icons/sherbert.svg"
-                        alt="Sherbert"
-                        width="66px"
-                        height="66px"
-                        style="max-width: 100%"
-                      />
-                      <h2 style="color: #fdb241">${name} Sent a message</h2>
-                    </td>
-                  </tr>
-                </tbody>
-                <tbody
-                  style="
-                    border-collapse: separate;
-                    border-spacing: 0 50px;
-                    background-color: #232435;
-                    color: #a0a0a0;
-                  "
-                >
-                  <tr>
-                    <td
-                      style="border-bottom: 1px solid rgb(227, 227, 218)"
-                      valign="top"
-                    >
-                      <strong style="color: #fdb241">name:</strong><br />
-                      <pre>${name}</pre>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      style="border-bottom: 1px solid rgb(227, 227, 218)"
-                      valign="top"
-                    >
-                      <strong style="color: #fdb241">email:</strong><br />
-                      <pre>${replyto}</pre>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      style="border-bottom: 1px solid rgb(227, 227, 218)"
-                      valign="top"
-                    >
-                      <strong style="color: #fdb241">subject:</strong><br />
-                      <pre>${subject}</pre>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      style="border-bottom: 1px solid rgb(227, 227, 218)"
-                      valign="top"
-                    >
-                      <strong style="color: #fdb241"> message:</strong><br />
-                      <pre>${content}</pre>
-                    </td>
-                  </tr>
-                  <tr align="center" style="padding: 0px 0px 22px">
-                    <td style="padding: 11px">
-                      <span style="color: #c48323; font-size: 12px"
-                        >${log.geo.country} ${log.geo.region} ${
-        log.geo.city
-      } ---
-                        ${log.time} --- ${logger.getIP(req)}</span
-                      >
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </body>
-      </html>
+              <tr style="background-color: #0000">
+                <td valign="top" align="center">
+                  <img
+                    src="https://barbieux.dev/icons/sherbert.svg"
+                    alt="Sherbert"
+                    width="66px"
+                    height="66px"
+                    style="max-width: 100%"
+                  />
+                  <h2 style="color: #fdb241">${name} Sent a message</h2>
+                </td>
+              </tr>
+            </tbody>
+            <tbody
+              style="
+                display: block;
+                border-radius: 0px 0px 10px 10px;
+                background-color: #232435;
+                margin: 1px;
+                color: #a0a0a0;
+              "
+            >
+              <tr>
+                <td valign="top">
+                  <strong style="color: #fdb241">name:</strong><br />
+                  <pre>${name}</pre>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <strong style="color: #fdb241">email:</strong><br />
+                  <pre>${replyto}</pre>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <strong style="color: #fdb241">subject:</strong><br />
+                  <pre>${subject}</pre>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <strong style="color: #fdb241"> message:</strong><br />
+                  <pre>${content}</pre>
+                </td>
+              </tr>
+              <tr align="center" style="padding: 0px 0px 22px">
+                <td style="padding: 11px">
+                  <span style="color: #c48323; font-size: 12px"
+                    >${log.geo.country} ${log.geo.region} ${log.geo.city} ---
+                    ${log.time} --- ${logger.getIP(req)}</span
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </table>
+    </div>
+  </body>
+</html>
+
       
     `,
       attachments: attachments.map((attch) => ({
