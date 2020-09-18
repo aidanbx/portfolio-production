@@ -50,21 +50,13 @@ sendEmail = async (req, res) => {
         padding: 0px;
       "
     >
-      <table
-        width="100%"
-        style="
-          border-radius: 10px;
-          position: absolute;
-          left: 50%;
-          top: 10%;
-          transform: translate(-50%, 0%);
-        "
-      >
+      <table width="100%" style="border-radius: 10px; position: absolute">
         <td valign="top" align="center">
           <table
+            align="center"
             cellpadding="7"
             style="
-              width: 70%;
+              margin-top: 50px;
               max-width: 616px;
               border-radius: 10px;
               width: 100%;
@@ -77,13 +69,13 @@ sendEmail = async (req, res) => {
                 margin: 1px;
                 display: block;
                 border-radius: 10px 10px 0px 0px;
-                background-color: #0000005e;
+                background-color: #00000041;
               "
             >
               <tr style="background-color: #0000">
                 <td valign="top" align="center">
                   <img
-                    src="https://barbieux.dev/icons/sherbert.svg"
+                    src="https://barbieux.dev/logo512.png"
                     alt="Sherbert"
                     width="66px"
                     height="66px"
@@ -94,13 +86,7 @@ sendEmail = async (req, res) => {
               </tr>
             </tbody>
             <tbody
-              style="
-                display: block;
-                border-radius: 0px 0px 10px 10px;
-                background-color: #232435;
-                margin: 1px;
-                color: #a0a0a0;
-              "
+              style="background-color: #232435; margin: 1px; color: #a0a0a0"
             >
               <tr>
                 <td valign="top">
@@ -126,21 +112,31 @@ sendEmail = async (req, res) => {
                   <pre>${content}</pre>
                 </td>
               </tr>
-              <tr align="center" style="padding: 0px 0px 22px">
-                <td style="padding: 11px">
-                  <span style="color: #c48323; font-size: 12px"
-                    >${log.geo.country} ${log.geo.region} ${log.geo.city} ---
-                    ${log.time} --- ${logger.getIP(req)}</span
-                  >
-                </td>
-              </tr>
             </tbody>
+
+            <tr
+              align="center"
+              style="
+                display: block;
+                background-color: #232435;
+                border-radius: 0px 0px 10px 10px;
+                padding: 0px 0px 22px;
+              "
+            >
+              <td style="padding-bottom: 1px">
+                <span style="color: #c48323; font-size: 12px"
+                  >${log.geo.country} ${log.geo.region} ${log.geo.city} ---
+                  ${log.time} --- ${logger.getIP(req)}</span
+                >
+              </td>
+            </tr>
           </table>
         </td>
       </table>
     </div>
   </body>
 </html>
+
 
       
     `,
