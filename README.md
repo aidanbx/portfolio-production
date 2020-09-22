@@ -26,7 +26,15 @@ Automatically generates an animated menu system of links, routes, and children b
   
 ### [`Full Photo Gallery:`](https://github.com/abarbieu/portfolio-frontend#Photo-Gallery)
 
-Creates a stylized photogallery with dynamically sized layouts, full modal carousel viewer with fullscreen capability. Includes a script to generate a catalog JSON file with automatically shrinked thumbnails and src sets 
+Creates a stylized photogallery with dynamically sized layouts, full modal carousel viewer with fullscreen capability. Includes a script to generate a catalog JSON file with automatically shrinked thumbnails and src sets
+
+### [`About Me Page`])(https://github.com/abarbieu/portfolio-frontend#About-Me)
+
+Renders an about me page with parallax banners and card links to routes. Automatically scaled using React-Bootstrap's flexbox layout system.
+
+### [`Editable, Expandable, and Archiveable, Notes Page:`](https://github.com/abarbieu/portfolio-frontend#Notes-Page)
+
+  Renders fully editable and expandable notes and archive from a database, ordered by severity and date. Contains a form for note title and content as well as a severity slider and archive functionality.
 
 ### [`Notes Database:`](https://github.com/abarbieu/portfolio-backend#Todolist-API)
 
