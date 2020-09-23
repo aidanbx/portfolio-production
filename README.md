@@ -28,7 +28,7 @@ Automatically generates an animated menu system of links, routes, and children b
 
 Creates a stylized photogallery with dynamically sized layouts, full modal carousel viewer with fullscreen capability. Includes a script to generate a catalog JSON file with automatically shrinked thumbnails and src sets
 
-### [`About Me Page`])(https://github.com/abarbieu/portfolio-frontend#About-Me)
+### [`About Me Page`](https://github.com/abarbieu/portfolio-frontend#About-Me)
 
 Renders an about me page with parallax banners and card links to routes. Automatically scaled using React-Bootstrap's flexbox layout system.
 
